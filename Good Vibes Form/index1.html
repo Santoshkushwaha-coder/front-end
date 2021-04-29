@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>santosh</title>
+</head>
+<body>
+    <main  class="container">
+        <h1>Good Vibes Form</h1>
+        <div class="content">
+            <p>Tell us something positive that happend to you today.</p>
+            <form class="form">
+                <div class=form-rows>
+                   <div class=label-form>
+                       <label for="name-1" >Name</label>
+                   </div>
+                   <div class="fields">
+                       <input  type="text" id="name-1" placeholder="Enter your name" name="name" required>
+                   </div>
+                   <div class="label-form">
+                       <label for="email" >Email</label>
+                   </div>
+                   <div class="fields">
+                       <input type="email" id="email" placeholder="Enter your email address" name="email" required>
+                   </div>
+                   <div class="label-form">
+                        <label for="scale" >On a scale of 1-10, how good was it?</label>
+                   </div>
+                   <div class="fields">
+                       <input type="number" id="scale" placeholder="Enter number between 1 and 10" name="scale" min="1" max="10">
+                   </div>
+                </div>
+                <div class="selection">
+                    <div class="label-form">
+                        <label for="where">Where did it happen?</label>
+                    </div>
+                    <div class="fields">
+                        <select id="where" name="happend">
+                            <option value="at home">At home</option>
+                            <option value="commute">On my commute</option>
+                            <option value="work">At work</option>
+                            <option value="street">On the street</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="radio">
+                    <div class="label-form">
+                        <label>At what time of day did it happen?</label>
+                    </div>
+                    <div class="fields">
+                        <input  type="radio" id="morning" name="time">
+                        <label for="morning">Morning</label><br>
+                        <input type="radio" id="afternoon" name="time">
+                        <label for="afternoon">Afternoon</label><br>
+                        <input type="radio" id="evening" name="time">
+                        <label for="evening">Evening</label>
+                    </div>
+                </div>
+                <div class="radio">
+                    <div class="label-form">
+                        <label>What emotions did you experience?<br>(Select all that apply)</label>
+                    </div>
+                    <div class="fields">
+                        <input  type="radio" id="excited" name="experience">
+                        <label for="excited">Excited</label><br>
+                        <input type="radio" id="humbled" name="experience">
+                        <label for="humbled">Humbled</label><br>
+                        <input type="radio" id="elated" name="experience">
+                        <label for="elated">Elated</label><br>
+                        <input type="radio" id="loved" name="experience">
+                        <label for="loved">Loved</label><br>
+                        <input type="radio" id="enthusiastic" name="experience">
+                        <label for="enthusiastic">Enthusiastic</label>
+                    </div>
+                </div>
+                <div class="label-form">
+                    <label for="event-details">Please describe your positive experience.</label>
+                </div>
+                <div class="fields">
+                    <textarea name="" id="event-details" placeholder="Enter your experience here..." rows="5" cols="40"></textarea>
+                </div>
+                <button id="button" type="submit" >Submit</button>
+            </form>
+
+        </div>
+    </main>
+    
+</body>
+</html>
