@@ -1,0 +1,96 @@
+body {
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    color: whitesmoke;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    
+    
+   
+}
+
+.center-trans {
+    background: color #fff;
+    background-color: transparent;
+}
+
+
+.center-not-trans {
+    background-color: #000;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+
+.text {
+    text-align: center;
+    padding: 50px 60px 50px 60px;
+    
+   font-size: larger;
+}
+
+
+.text2 {
+    text-align: center;
+    padding: 50px 60px 50px 60px;
+    background-color: black;
+    color: white;
+   font-size: larger;
+}
+
+
+.img1, .img2, .img3{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+    
+  }
+
+
+.img1 {
+    min-height :650px;
+    background-image: url(images/computer.jpg);
+}
+
+
+.img2 {
+    min-height:400px;
+    background-image: url(images/pexels-pew-nguyen-243971.jpg);
+}
+
+
+.img3 {
+    min-height:400px;
+    background-image: url(images/pexels-kevin-ku-577585.jpg);
+}
+
+
+@media(max-width:568px){
+    .img1, .img2, .img3{
+      background-attachment:scroll;
+    }
+  }
+
+
